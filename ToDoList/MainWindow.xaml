@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="TaskTextBox" HorizontalAlignment="Left" Height="47" Margin="186,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" KeyUp="TaskTextBox_KeyUp"/>
+        <ListBox x:Name="TasksListBox" HorizontalAlignment="Left" Height="167" Margin="186,168,0,0" VerticalAlignment="Top" Width="423"/>
+
     </Grid>
 </Window>

@@ -24,5 +24,14 @@ namespace ToDoList
         {
             InitializeComponent();
         }
+
+        private void TaskTextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter && !TaskTextBox.Text.StartsWith(" "))
+            {
+                TasksListBox.Items.Add(TaskTextBox.Text);
+                TaskTextBox.Text = "";
+            }
+        }
     }
 }
