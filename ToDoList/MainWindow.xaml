@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="TaskTextBox" HorizontalAlignment="Left" Height="47" Margin="186,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" KeyUp="TaskTextBox_KeyUp"/>
-        <ListBox x:Name="TasksListBox" HorizontalAlignment="Left" Height="167" Margin="186,168,0,0" VerticalAlignment="Top" Width="423"/>
+        <TextBox x:Name="TaskTextBox" HorizontalAlignment="Left" Height="47" Margin="127,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" KeyUp="TaskTextBox_KeyUp"/>
+        <ListBox x:Name="TasksListBox" HorizontalAlignment="Left" Height="167" Margin="127,168,0,0" VerticalAlignment="Top" Width="423"/>
+        <Button x:Name="RemoveButton" Content="Remove" HorizontalAlignment="Left" Margin="598,232,0,0" VerticalAlignment="Top" Width="92" Height="39" Click="RemoveButton_Click" FontSize="16" FontWeight="Bold"/>
 
     </Grid>
 </Window>

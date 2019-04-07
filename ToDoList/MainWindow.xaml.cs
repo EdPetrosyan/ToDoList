@@ -33,5 +33,10 @@ namespace ToDoList
                 TaskTextBox.Text = "";
             }
         }
+
+        private void RemoveButton_Click(object sender, RoutedEventArgs e)
+        {
+            TasksListBox.Items.Remove(TasksListBox.SelectedItem);
+        }
     }
 }
