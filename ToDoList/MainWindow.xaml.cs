@@ -20,6 +20,8 @@ namespace ToDoList
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<string> doneTasks = new List<string>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,7 +38,19 @@ namespace ToDoList
 
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
-            TasksListBox.Items.Remove(TasksListBox.SelectedItem);
+            if (TasksListBox.SelectedIndex > -1)
+            {
+                TasksListBox.Items.Remove(TasksListBox.SelectedItem); 
+            }
+        }
+        private void DoneButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (TasksListBox.SelectedIndex > -1)
+            {
+                doneTasks.Add((TasksListBox.SelectedItem.ToString()));
+                DoneTasksListBox.Items.Add(doneTasks.Last());
+                TasksListBox.Items.Remove(TasksListBox.SelectedItem);
+            }
         }
     }
 }
