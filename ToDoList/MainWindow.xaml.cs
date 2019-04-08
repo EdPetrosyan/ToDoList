@@ -52,5 +52,13 @@ namespace ToDoList
                 TasksListBox.Items.Remove(TasksListBox.SelectedItem);
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = DoneTasksListBox.Items.Count-1; i >=0 ; i--)
+            {
+                DoneTasksListBox.Items.RemoveAt(i);
+            }
+        }
     }
 }
